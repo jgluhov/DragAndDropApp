@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    display: block;
+}
+
+.dashboard {
+    border: 1px dashed #bfbfbf;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.dashboard button {
+    height: 30px;
+}
+
+.dashboard button:hover {
+    cursor: pointer;
+}
+
+.cabinet {
+    border: 1px dashed #bfbfbf;
+    height: 500px;
+    width: calc(50% - 4px);
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    overflow-y: auto;
+}
+
+.box {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.box.hovered {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.box > span {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
